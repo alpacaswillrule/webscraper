@@ -22,8 +22,10 @@ python_jobs = results.find_all(
 )
 #the above searches through the headers, looks for the word python in text
 python_job_elements = [
-    h2_element.parent.parent.parent for h2_element in python_jobs
+    h2_element.parent.parent.parent for h2_element in python_jobs #now need to find sibling elements, so we go up here 
 ]
+
+#once we find the title elements
 for job_element in python_job_elements:
     title_element = job_element.find("h2", class_="title")
     company_element = job_element.find("h3", class_="company")
