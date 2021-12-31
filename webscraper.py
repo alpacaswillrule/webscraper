@@ -20,7 +20,7 @@ job_elements = results.find_all("div", class_="card-content") #find all returns 
 python_jobs = results.find_all(
     "h2", string=lambda text: "python" in text.lower()
 )
-
+#the above searches through the headers, looks for the word python in text
 python_job_elements = [
     h2_element.parent.parent.parent for h2_element in python_jobs
 ]
