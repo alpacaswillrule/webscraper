@@ -33,3 +33,6 @@ for job_element in python_job_elements:
     print(title_element.text.strip())
     print(company_element.text.strip())
     print(location_element.text.strip())
+    link = job_element.find("a", string = lambda text: "apply" in text.lower())["href"]
+    linkhref = link
+    print(f"Apply here: {link}\n")
