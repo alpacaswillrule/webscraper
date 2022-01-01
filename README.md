@@ -1,2 +1,2 @@
 # webscraper
-work in progress
+simple static webscraper, practice for learning webscraping
